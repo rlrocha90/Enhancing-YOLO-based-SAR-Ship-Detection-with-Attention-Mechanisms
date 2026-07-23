@@ -158,14 +158,7 @@ Main results:
 
 ```
 .
-├── datasets/
-├── ultralytics/
-├── models/
-├── configs/
-├── experiments/
-├── results/
-├── figures/
-├── weights/
+├── 
 ├── README.md
 ```
 
