@@ -1,0 +1,15 @@
+path: ../datasets/ssdd # dataset root dir
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ['ship']
+
+roboflow:
+  workspace: trackingtest
+  project: sar-detection-rs6e0
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/trackingtest/sar-detection-rs6e0/dataset/1

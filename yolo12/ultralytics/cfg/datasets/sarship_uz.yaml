@@ -1,0 +1,11 @@
+path: ../datasets/sar_ship_uz # dataset root dir
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ['ship']
+names:
+ 0: ship
+

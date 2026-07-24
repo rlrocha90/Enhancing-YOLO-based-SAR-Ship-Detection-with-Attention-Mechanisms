@@ -1,0 +1,11 @@
+path: ../datasets/sar_ship_rz # dataset root dir
+
+train: train/images/cv2_linear
+val: valid/images/cv2_linear
+test: test/images/cv2_linear
+
+nc: 1
+names: ['ship']
+names:
+ 0: ship
+

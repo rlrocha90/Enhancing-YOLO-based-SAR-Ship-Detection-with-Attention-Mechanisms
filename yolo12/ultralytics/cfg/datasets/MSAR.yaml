@@ -1,0 +1,19 @@
+path: ../datasets/MSAR # dataset root dir
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 4
+names:
+  0: ship
+  1: aircraft
+  2: tank
+  3: bridge
+
+roboflow:
+  workspace: trackingtest
+  project: sar-detection-rs6e0
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/trackingtest/sar-detection-rs6e0/dataset/1

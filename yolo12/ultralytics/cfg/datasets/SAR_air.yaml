@@ -1,0 +1,15 @@
+path: ../datasets/SAR_air # dataset root dir
+
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['aircraft']
+
+roboflow:
+  workspace: project-y2j81
+  project: hust-rslab-sar-aircraft-data
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project-y2j81/hust-rslab-sar-aircraft-data/dataset/1
