@@ -162,7 +162,7 @@ Main results:
 ├──── ultralytics
 ├── v12 documents
 ├──── ultralytics
-├── How to Run (container)
+├── How to Run (on Dokcer)
 ├── README.md
 ```
 
