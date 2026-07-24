@@ -1,0 +1,26 @@
+How To Run (on Docker)
+
+== -- YOLO11 -- ==
+
+docker run -it --gpus all --shm-size=2gb --name yolov11_container_name -v "/yolo11HOME:/yolo11DEST" -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
+pip install ultralytics
+apt-get update
+apt install -y libgl1-mesa-glx
+pip install -e .
+
+
+== -- YOLO12 -- ==
+
+docker run -it --gpus all --shm-size=2gb --name yolov12_container_name -v "/yolo12HOME:/yolo12DEST" -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
+wget https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu11torch2.2cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+pip install -r requirements.txt
+pip install -e .
+apt-get update
+apt install -y libgl1-mesa-glx
+
+== -- TO TRAIN -- ==
+
+yolo detect train data=dataset.yaml model=model.yaml epochs=500 batch=16 imgsz=640 device=0 workers=2
+** dataset.yaml (choose the desire dataset from dataset folder)
+** model.yaml (choose the desire model from model folder)
+** all other parameters are the same used by the authors
